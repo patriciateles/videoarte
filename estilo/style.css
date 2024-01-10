@@ -19,7 +19,13 @@ nav a{
     padding: 10px;
     font-size: 15px;
 }
-img{
+h3{
+    color: white;
+}
+h2{
+    text-align: center;
+}
+img.h3 {
     display: block;
     width: 100%;
 }
@@ -51,7 +57,7 @@ main article h3 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px;
-    background-color: lemonchiffon;
+    background-color: black;
 }
 a{
     text-decoration: none;
