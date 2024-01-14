@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Slab:wght@300&display=swap');
-@charset "UTF8";
+@charset"UTF8";
 
 *{
     margin: 0;
@@ -29,15 +29,16 @@ img.h3 {
     display: block;
     width: 100%;
 }
+
 body{
     background-color: whitesmoke;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
 }
 main{
     background-color: white;
-    max-width: 840px;
+    max-width: 800px;
     min-width: 300px;
     padding: 20px;
     border-radius: 10px;
