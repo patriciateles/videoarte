@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Slab:wght@300&display=swap');
+@charset"UTF8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+header{
+    min-height: 80px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    header a:hover{
+        background-color: lemonchiffon;
+        border-radius: 5px;
+    }
+
+    nav{
+        margin: auto;
+        background-color: rgb(210, 226, 226);
+        max-width: 800px;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+    }
+
+nav a{ /*colocar fora de nav ul li para fazer o hover*/
+    padding:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+nav a:hover{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline; /*colocar na horizontal*/
+    text-align: center;
+    font-size: 15px;
+}
+
+img{
+width: 100%;
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    /*box-shadow: 0px 0px 10px #00000095;*/
+}
+
+main p{
+    margin: 5px 0px 10px 0px; /*em cima, dir, em baixo, esq / sentido horário*/
+    line-height: 1.5em; /*espaçameto 1.5 pro texto não ficar grudado*/
+    text-align: left;
+}
+
+main h2{
+    text-align: center;
+}
+
+main h3 {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+main h4 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+img.h3 {
+    display: block;
+    width: 100%;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(210, 226, 226);
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 20px;
+}
+
+footer p {
+    padding: 5px; 
+}
+
+/* --------------_____ VIDEOS DIV _____---------------*/
+div.video {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px 0px 10px 0px;
+    position: relative;
+    padding-bottom: 40%;
+}
+div.video > iframe {
+    position: absolute;
+    width: 83%;
+    height: 100%;
+}
+div.videovimeo {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    padding-bottom: 40%;
+}
+div.videovimeo > iframe {
+    position: absolute;
+    width: 83%;
+    height: 100%;
+}
+footer{
+    background-color: whitesmoke;
+    padding: 20px;
+    max-width: 840px;
+    min-width: 300px;
+    margin:auto;
+}
+footer p {
+    line-height: 1.5em;
+    padding: 10px; 
+    font-size: 13px;
+    text-align: center;
+}
+/* --------------_____ CARROSSEL _____---------------*/
+
+.carrossel{
+    margin: auto;
+    padding-top: 10px;
+    /*margin: 0 auto;*/ /*centralizado*/
+    /*width: 700px;*/
+    height: 350px;
+    overflow: hidden;
+}
+.slides {
+width: 400%;
+height: 350px;
+display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img {
+    width: 700px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 700px; /*mesma do carrossel*/
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+} 
+
+.manual-btn:hover{
+    background-color: lemonchiffon;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 700px;
+    margin-top: 310px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: black;
+}
+
+/*resolução smartfone*/
+@media (max-width:576px) {
+   
+    nav {
+        padding: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        }
+        
+        nav a{
+            text-decoration: none;
+            padding: 0px;
+        }
+
+        nav ul {
+            border-bottom: 2px solid rgb(209, 209, 209);
+        }
+
+    nav ul li a{
+            display: block;
+            text-align: center;
+            font-size: 15px;
+            padding: 6px;
+            color: black;
+            border-top: 2px solid rgb(209, 209, 209);
+          }
+
+}
