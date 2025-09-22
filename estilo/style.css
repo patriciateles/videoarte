@@ -124,6 +124,10 @@ footer{
     padding: 20px;
 }
 
+footer ul li {
+     list-style-type: none;
+}
+
 footer p {
     padding: 5px; 
 }
